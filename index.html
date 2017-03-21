@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .intro { display: none;}
-        </style>
-    </head>
+    <head></head>
     <body>
-        <h4 class="intro">I appeared when you clicked the button "Click Me"<h4>
+        <h1 class="intro">I will disaapear when you click the button "Click Me"<h1>
+        <div class="intro">
+            <img src="img/butterfly.jpg">
+        </div>
         <button id="btn">Click Me</button>
 
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>
-            //When the document is ready(loaded), do this
+            //When html document is ready(loaded), do this
             $(document).ready(function() {
                 // When any button element is clicked (this is an event), do this
                 $("#btn").click(function() {
-                    //show all elements with class "intro" (this is an effect)
-                    $(".intro").show()
+                    //hide all elements with class "intro" (this is an effect)
+                    $(".intro").hide()
                     });
                 });
         </script>
